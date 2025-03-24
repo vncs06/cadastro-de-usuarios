@@ -2,6 +2,11 @@
   {
     "Nome": "Gabriel",
     "Idade": 18,
-    "Email": "gabriel"
+    "Email": "gabriel@gmail.com"
+  },
+  {
+    "Nome": "Joao",
+    "Idade": 18,
+    "Email": "joao@gmail.com"
   }
 ]

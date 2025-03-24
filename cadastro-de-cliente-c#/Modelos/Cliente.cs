@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.Design;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
 using System.Text.Json;
 namespace cadastro_de_cliente.Modelos;
 
@@ -19,15 +20,42 @@ class Cliente
     public int Idade { get; set; }
     public string Email { get; set; }
 
+    public static bool verificarEmail(string email)
+    {
+        string padrao = @"^[\w\.-]+@[\w\.-]+\.\w{2,}$";
+        if (string.IsNullOrWhiteSpace(email))
+        {
+            return true;
+
+        }
+
+        if (!Regex.IsMatch(email, padrao))
+        {
+            return true;
+
+        }
+
+        return false;
+
+    }
+
     public static void exibirDadosDoCliente(string nome)
     {
         string nomeDoArquivo = "lista-de-clientes";
+
+        if (!File.Exists(nomeDoArquivo))
+        {
+            Console.WriteLine("Nao existem dados de clientes :(");
+            return;
+
+        }
+
         string jsonArquivo = File.ReadAllText(nomeDoArquivo);
         var clientesLista = JsonSerializer.Deserialize<List<Cliente>>(jsonArquivo);
         var clientesCadastrados = clientesLista.Find(t => t.Nome == nome);
 
 
-        if (listaDeCliente.Count == 0 && jsonArquivo == string.Empty)
+        if (listaDeCliente.Count == 0 && string.IsNullOrEmpty(jsonArquivo))
         {
             Console.WriteLine("Nao existem clientes cadastrados :( Voltando ao menu principal...");
             Thread.Sleep(5000);
@@ -55,44 +83,28 @@ class Cliente
 
     }
 
-    public static void VerificarDuplicidadeNaLista(Cliente cliente, string nome, string email)
+    public static bool VerificarDuplicidadeNaLista(Cliente cliente)
     {
-        if (!listaDeCliente.Any(t => t.Nome == nome || t.Email == email))
+        if(listaDeCliente.Any(t => t.Nome.Equals(cliente.Nome) || t.Email.Equals(cliente.Email)))
         {
-            string nomeDoArquivo = "lista-de-clientes";
-            string jsonExistete = File.ReadAllText(nomeDoArquivo);
-            if (!string.IsNullOrEmpty(jsonExistete))
+            return true;
+
+        }
+
+        string nomeDoArquivo = "lista-de-clientes";
+        if (File.Exists(nomeDoArquivo))
+        {
+            string jsonExistente = File.ReadAllText(nomeDoArquivo);
+            var clientesLista = JsonSerializer.Deserialize<List<Cliente>>(jsonExistente) ?? new List<Cliente>();
+            if(clientesLista.Any(t => t.Nome.Equals(cliente.Nome) || t.Email.Equals(cliente.Email)))
             {
-                var clientesCadastrados = JsonSerializer.Deserialize<List<Cliente>>(jsonExistete) ?? new List<Cliente>();
-
-                if (!clientesCadastrados.Any(t => t.Nome == nome || t.Email == email))
-                {
-                    listaDeCliente.Add(cliente);
-                    Console.WriteLine("Cliente cadastrado com sucesso :)");
-
-                }
-                else
-                {
-                    Console.WriteLine("O arquivo nao foi cadastrado com sucesso, verifique se o nome ou email ja estao em uso.");
-
-                }
-
-            }
-            else
-            {
-                listaDeCliente.Add(cliente);
-                Console.WriteLine("Cliente cadastrado com sucesso :)");
+                return true;
 
             }
 
         }
-        else
-        {
-            Console.WriteLine("O arquivo nao foi cadastrado com sucesso, verifique se o nome ou email ja estao em uso.");
 
-        }
-        
-
+        return false;
 
     }
 

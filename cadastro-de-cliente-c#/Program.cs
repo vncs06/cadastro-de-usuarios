@@ -37,7 +37,7 @@ using (HttpClient client = new HttpClient())
         int idade = int.Parse(Console.ReadLine()!);
         Console.Write("Digite o melhor email do cliente: ");
         string email = Console.ReadLine()!;
-        if (string.IsNullOrEmpty(email))
+        if (Cliente.verificarEmail(email))
         {
             Console.WriteLine("Digite um email valido!!! (Ex: email@email.com)");
             Console.ReadKey();
@@ -48,8 +48,18 @@ using (HttpClient client = new HttpClient())
         }
 
         Cliente cliente = new(nome, idade, email);
-        Cliente.VerificarDuplicidadeNaLista(cliente, nome, email);
-        Cliente.GerarArquivoJson();
+        if (!Cliente.VerificarDuplicidadeNaLista(cliente))
+        {
+            Cliente.listaDeCliente.Add(cliente);
+            Cliente.GerarArquivoJson();
+            Console.WriteLine("Cliente cadastrado com sucesso :)");
+
+        }
+        else
+        {
+            Console.WriteLine("Cliente ja existente, verifique o nome e o email");
+
+        }
 
         Console.Write("pressione qualquer tecla para voltar ao menu...");
         Console.ReadKey();
