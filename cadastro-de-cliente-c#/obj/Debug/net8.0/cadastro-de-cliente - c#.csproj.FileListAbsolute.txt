@@ -1,0 +1,14 @@
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\bin\Debug\net8.0\cadastro-de-cliente - c#.exe
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\bin\Debug\net8.0\cadastro-de-cliente - c#.deps.json
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\bin\Debug\net8.0\cadastro-de-cliente - c#.runtimeconfig.json
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\bin\Debug\net8.0\cadastro-de-cliente - c#.dll
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\bin\Debug\net8.0\cadastro-de-cliente - c#.pdb
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\cadastro-de-cliente - c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\cadastro-de-cliente - c#.AssemblyInfoInputs.cache
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\cadastro-de-cliente - c#.AssemblyInfo.cs
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\cadastro-de-cliente - c#.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\cadastro-de-cliente - c#.dll
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\refint\cadastro-de-cliente - c#.dll
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\cadastro-de-cliente - c#.pdb
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\cadastro-de-cliente - c#.genruntimeconfig.cache
+C:\Users\Gabriel\OneDrive\Documentos\GitHub\cadastro-de-cliente - c#\cadastro-de-cliente - c#\obj\Debug\net8.0\ref\cadastro-de-cliente - c#.dll
