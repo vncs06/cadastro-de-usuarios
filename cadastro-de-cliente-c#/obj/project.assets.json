@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\GitHub\\cadastro-de-cliente - c#\\cadastro-de-cliente-c#\\cadastro-de-cliente-c#.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\GitHub\\cadastro-de-cliente-c#\\cadastro-de-cliente-c#\\cadastro-de-cliente-c#.csproj",
       "projectName": "cadastro-de-cliente-c#",
-      "projectPath": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\GitHub\\cadastro-de-cliente - c#\\cadastro-de-cliente-c#\\cadastro-de-cliente-c#.csproj",
+      "projectPath": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\GitHub\\cadastro-de-cliente-c#\\cadastro-de-cliente-c#\\cadastro-de-cliente-c#.csproj",
       "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\GitHub\\cadastro-de-cliente - c#\\cadastro-de-cliente-c#\\obj\\",
+      "outputPath": "C:\\Users\\Gabriel\\OneDrive\\Documentos\\GitHub\\cadastro-de-cliente-c#\\cadastro-de-cliente-c#\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
