@@ -1,6 +1,6 @@
 # 📌Gerenciador de Cadastro de clientes
 
-Um sistema simples em **C#** para **criar**, **armazenar** e **listar** os clientes com uma basas de dados em **JSON**
+Um sistema simples em **C#** para **criar**, **armazenar** e **listar** os clientes com uma base de dados em **JSON**
 
 ## 🚀Funcionalidades
 
